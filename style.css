@@ -1,0 +1,65 @@
+.container {
+  max-width: 1200px;
+  padding: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#eye1 {
+  animation: eye1 3s infinite;
+}
+#eye2 {
+  animation: eye2 3s infinite;
+}
+
+@keyframes eye1 {
+  0% {
+    cx: 253;
+    cy: 190;
+  }
+  50% {
+    cx: 253;
+    cy: 233;
+  }
+  100% {
+    cx: 253;
+    cy: 190;
+  }
+}
+@keyframes eye2 {
+  0% {
+    cx: 359;
+    cy: 190;
+  }
+  50% {
+    cx: 359;
+    cy: 233;
+  }
+
+  100% {
+    cx: 359;
+    cy: 190;
+  }
+}
+
+.text {
+  fill: rgb(209, 29, 173);
+  font-size: 50px;
+  word-spacing: 30px;
+  font-weight: 700;
+}
+
+svg {
+  overflow: visible;
+}
+
+#text {
+  stroke-dasharray: 6488;
+  stroke-dashoffset: 6488;
+  animation: draw 7s linear forwards;
+}
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
